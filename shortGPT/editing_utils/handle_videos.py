@@ -12,7 +12,7 @@ def getYoutubeVideoLink(url):
         "no_color": True,
         "no_call_home": True,
         "no_check_certificate": True,
-        "cookiefile":"cookies.txt"
+        "cookiefile":"cookies.txt",
         # Look for m3u8 formats first, then fall back to regular formats
         "format": f"bestvideo[ext=m3u8]{format_filter}/bestvideo{format_filter}"
     }
