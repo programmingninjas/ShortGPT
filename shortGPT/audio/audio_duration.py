@@ -12,7 +12,8 @@ def get_duration_yt_dlp(url):
         "no_warnings": True,
         "no_color": True,
         "no_call_home": True,
-        "no_check_certificate": True
+        "no_check_certificate": True,
+        "cookiefile":"cookies.txt"
     }
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -72,6 +73,7 @@ def getYoutubeAudioLink(url):
         "no_color": True,
         "no_call_home": True,
         "no_check_certificate": True,
+        "cookiefile":"cookies.txt",
         "format": "bestaudio/best"
     }
     try:
