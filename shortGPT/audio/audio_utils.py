@@ -19,6 +19,7 @@ def downloadYoutubeAudio(url, outputFile):
         "no_color": True,
         "no_call_home": True,
         "no_check_certificate": True,
+        "cookiefile":"cookies.txt",
         "format": "bestaudio/best", 
         "outtmpl": outputFile
     }
